@@ -23,7 +23,7 @@
 		7A2F27182030769400C942BE /* SavedPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F27172030769400C942BE /* SavedPhotosViewController.swift */; };
 		7A2F271D203076D500C942BE /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F271B203076D500C942BE /* DetailCell.swift */; };
 		7A2F271E203076D500C942BE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2F271C203076D500C942BE /* DetailViewController.swift */; };
-		7AA123C920309D1800A7419E /* AnimatedViewControllerPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA123C820309D1800A7419E /* AnimatedViewControllerPrototype.swift */; };
+		7AA123C920309D1800A7419E /* AnimatedCollectionControllerPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA123C820309D1800A7419E /* AnimatedCollectionControllerPrototype.swift */; };
 		7AA123CB203186BF00A7419E /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA123CA203186BF00A7419E /* SectionHeaderCollectionReusableView.swift */; };
 		AE0C40B35A6423EA2796662C /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C4E43F69CB0D9E544E345 /* UIImage+RoundedCorner.m */; };
 		AE0C40E9D37D2AFA163DFEAE /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0C465E99AB5E1BF54AA3FD /* UIImage+Alpha.m */; };
@@ -74,7 +74,7 @@
 		7A2F27172030769400C942BE /* SavedPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPhotosViewController.swift; sourceTree = "<group>"; };
 		7A2F271B203076D500C942BE /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		7A2F271C203076D500C942BE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		7AA123C820309D1800A7419E /* AnimatedViewControllerPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedViewControllerPrototype.swift; sourceTree = "<group>"; };
+		7AA123C820309D1800A7419E /* AnimatedCollectionControllerPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCollectionControllerPrototype.swift; sourceTree = "<group>"; };
 		7AA123CA203186BF00A7419E /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		AE0C41C996425F9934D106D3 /* UIAlertController+Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Window.h"; sourceTree = "<group>"; };
 		AE0C4630BFD573C9BE44BBE4 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
@@ -210,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				AE0C4C4ABF2EA206ADD5C4C2 /* TransitionController.swift */,
-				7AA123C820309D1800A7419E /* AnimatedViewControllerPrototype.swift */,
+				7AA123C820309D1800A7419E /* AnimatedCollectionControllerPrototype.swift */,
 			);
 			path = TransitionUtils;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 				7A2F2701202845B100C942BE /* NetworkService.swift in Sources */,
 				7A2F26FF2028279300C942BE /* PhotoDataManager.swift in Sources */,
 				AE0C40E9D37D2AFA163DFEAE /* UIImage+Alpha.m in Sources */,
-				7AA123C920309D1800A7419E /* AnimatedViewControllerPrototype.swift in Sources */,
+				7AA123C920309D1800A7419E /* AnimatedCollectionControllerPrototype.swift in Sources */,
 				AE0C40B35A6423EA2796662C /* UIImage+RoundedCorner.m in Sources */,
 				AE0C43182B4016BA4DE18C58 /* UIAlertController+Window.m in Sources */,
 				AE0C4DF2E0148ED048FCCEE3 /* TransitionController.swift in Sources */,

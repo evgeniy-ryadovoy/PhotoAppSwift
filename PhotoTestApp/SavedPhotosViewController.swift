@@ -47,7 +47,7 @@ extension Date {
     var amPM: String { return Formatter.amPM.string(from: self) }
 }
 
-class SavedPhotosViewController: AnimatedViewControllerPrototype {
+class SavedPhotosViewController: AnimatedCollectionControllerPrototype {
 
     private let localStorage = LocalStorageManager()
 

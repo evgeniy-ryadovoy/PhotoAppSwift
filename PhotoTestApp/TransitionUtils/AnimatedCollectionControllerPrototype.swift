@@ -1,5 +1,5 @@
 //
-//  AnimatedViewControllerPrototype.swift
+//  AnimatedCollectionControllerPrototype.swift
 //  PhotoTestApp
 //
 //  Created by Evgeniy on 11/02/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnimatedViewControllerPrototype: UIViewController {
+class AnimatedCollectionControllerPrototype: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -83,7 +83,7 @@ class AnimatedViewControllerPrototype: UIViewController {
 }
 
 // MARK: - UINavigationControllerDelegate
-extension AnimatedViewControllerPrototype: UINavigationControllerDelegate {
+extension AnimatedCollectionControllerPrototype: UINavigationControllerDelegate {
 
     func navigationController(_ navigationController: UINavigationController,
                               animationControllerFor operation: UINavigationControllerOperation,
@@ -113,7 +113,7 @@ extension AnimatedViewControllerPrototype: UINavigationControllerDelegate {
 }
 
 // MARK: ImageTransitionProtocol
-extension AnimatedViewControllerPrototype: ImageTransitionProtocol {
+extension AnimatedCollectionControllerPrototype: ImageTransitionProtocol {
 
     // 1: hide selected cell for transition snapshot
     func transitionSetup() {
@@ -136,7 +136,7 @@ extension AnimatedViewControllerPrototype: ImageTransitionProtocol {
 }
 
 // MARK: GalleryDelegate
-extension AnimatedViewControllerPrototype: GalleryDelegate {
+extension AnimatedCollectionControllerPrototype: GalleryDelegate {
 
     func updateSelectedIndex(newIndex: IndexPath) {
         selectedIndex = newIndex

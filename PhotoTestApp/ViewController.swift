@@ -8,12 +8,9 @@ private let reuseIdentifier = "PhotoCell"
 private let selectedAlpha: CGFloat = 0.2
 private let defaultAlpha: CGFloat  = 1.0
 
-class ViewController: AnimatedViewControllerPrototype {
+class ViewController: AnimatedCollectionControllerPrototype {
 
     @IBOutlet weak var searchBar: UISearchBar!
-
-    //NSArray for quick search of updated photo image
-    private var photosNSArray = NSArray()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +40,8 @@ class ViewController: AnimatedViewControllerPrototype {
            We can specify section, cell, etc */
 
         if let userInfo = notification.userInfo, let photo = userInfo["photo"] {
-            let index = self.photosNSArray.indexOfObjectIdentical(to: photo)
+            let nsArray = self.photos[0] as NSArray
+            let index = nsArray.indexOfObjectIdentical(to: photo)
 
             self.collectionView.performBatchUpdates({
                 self.collectionView.reloadItems(at: [IndexPath(item: index, section: 0)])
@@ -93,8 +91,6 @@ extension ViewController: PhotoDataManagerDelegate {
         } else {
             self.photos[0].append(contentsOf: photos)
         }
-
-        self.photosNSArray = self.photos[0] as NSArray
 
         DispatchQueue.main.async {
             self.hideActivityIndicator()
